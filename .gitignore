@@ -1,2 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
+Assets/
+Sprout Lands - UI Pack - Basic pack

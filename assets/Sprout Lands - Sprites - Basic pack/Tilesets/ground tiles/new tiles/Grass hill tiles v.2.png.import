@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kxt5pj0gieyf"
-path="res://.godot/imported/Grass hill tiles v.2.png-a39d7650608563e04902c8dc4c397a2b.ctex"
+path="res://.godot/imported/Grass hill tiles v.2.png-9ff1838bde10b16faa8630e7a45e59e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Grass hill tiles v.2.png"
-dest_files=["res://.godot/imported/Grass hill tiles v.2.png-a39d7650608563e04902c8dc4c397a2b.ctex"]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Grass hill tiles v.2.png"
+dest_files=["res://.godot/imported/Grass hill tiles v.2.png-9ff1838bde10b16faa8630e7a45e59e8.ctex"]
 
 [params]
 

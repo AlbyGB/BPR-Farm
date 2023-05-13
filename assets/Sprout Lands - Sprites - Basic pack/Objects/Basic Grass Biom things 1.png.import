@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0375v5awhvam"
-path="res://.godot/imported/Basic Grass Biom things 1.png-5bc7085845e58a1f53cc342c925cd9bd.ctex"
+path="res://.godot/imported/Basic Grass Biom things 1.png-1a86dfb994d894a9084868d19bb1f391.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png"
-dest_files=["res://.godot/imported/Basic Grass Biom things 1.png-5bc7085845e58a1f53cc342c925cd9bd.ctex"]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png"
+dest_files=["res://.godot/imported/Basic Grass Biom things 1.png-1a86dfb994d894a9084868d19bb1f391.ctex"]
 
 [params]
 
