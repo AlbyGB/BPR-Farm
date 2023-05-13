@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btrxuicvsfws4"
-path="res://.godot/imported/All Icons.png-a858a14829a23cd0c7777a25826df165.ctex"
+path="res://.godot/imported/All Icons.png-1c3ae2bbb0a45350ab1a98cfe365c4be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/All Icons.png"
-dest_files=["res://.godot/imported/All Icons.png-a858a14829a23cd0c7777a25826df165.ctex"]
+source_file="res://Assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Icons/All Icons.png"
+dest_files=["res://.godot/imported/All Icons.png-1c3ae2bbb0a45350ab1a98cfe365c4be.ctex"]
 
 [params]
 

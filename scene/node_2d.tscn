@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://xhn1jpe25s75"]
+[gd_scene load_steps=4 format=3 uid="uid://uotby71b14jt"]
 
-[ext_resource type="Script" path="res://script/Player.gd" id="1_mt57w"]
+[ext_resource type="Script" path="res://Script/Mappa.gd" id="1_5juvr"]
+[ext_resource type="Script" path="res://Script/Player.gd" id="1_ll17e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4e1hk"]
 
 [node name="Game" type="Node2D"]
 
-[node name="Mappa" type="Node2D" parent="."]
+[node name="Mappa" type="TileMap" parent="." node_paths=PackedStringArray("player")]
+format = 2
+script = ExtResource("1_5juvr")
+player = NodePath("../CharacterBody2D")
 
 [node name="Mappa 1" type="Polygon2D" parent="Mappa"]
 color = Color(0, 1, 1, 1)
@@ -51,8 +55,9 @@ position = Vector2(717, 23)
 scale = Vector2(1.01493, 1.03017)
 polygon = PackedVector2Array(0, 0, 334, 0, 334, 146, 0, 146)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("1_mt57w")
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." node_paths=PackedStringArray("mappa")]
+script = ExtResource("1_ll17e")
+mappa = NodePath("../Mappa")
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(810, 369)

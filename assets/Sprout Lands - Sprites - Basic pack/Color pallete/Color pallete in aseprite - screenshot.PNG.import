@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cy2e4hgom6hbb"
-path="res://.godot/imported/Color pallete in aseprite - screenshot.PNG-44b9d4a681f65664dbe927846a9deb68.ctex"
+path="res://.godot/imported/Color pallete in aseprite - screenshot.PNG-42c4e959a83b2619ee25d02388c41650.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Color pallete/Color pallete in aseprite - screenshot.PNG"
-dest_files=["res://.godot/imported/Color pallete in aseprite - screenshot.PNG-44b9d4a681f65664dbe927846a9deb68.ctex"]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Color pallete/Color pallete in aseprite - screenshot.PNG"
+dest_files=["res://.godot/imported/Color pallete in aseprite - screenshot.PNG-42c4e959a83b2619ee25d02388c41650.ctex"]
 
 [params]
 

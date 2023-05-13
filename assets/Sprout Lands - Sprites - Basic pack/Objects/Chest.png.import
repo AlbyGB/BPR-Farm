@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqidom34xe1in"
-path="res://.godot/imported/Chest.png-a1024a2bea6a130a51e4d7c3c5d60b62.ctex"
+path="res://.godot/imported/Chest.png-f9da6708e25ddec1feae1970bc59a4c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Chest.png"
-dest_files=["res://.godot/imported/Chest.png-a1024a2bea6a130a51e4d7c3c5d60b62.ctex"]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Objects/Chest.png"
+dest_files=["res://.godot/imported/Chest.png-f9da6708e25ddec1feae1970bc59a4c4.ctex"]
 
 [params]
 

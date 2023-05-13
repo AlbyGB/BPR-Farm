@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbyfyphxywu25"
-path="res://.godot/imported/Square Buttons 26x19.png-5d063af9ac9e9a8a01c43f0fe4c6c2f5.ctex"
+path="res://.godot/imported/Square Buttons 26x19.png-a21facff9ed2d96a2cfbb07f0621be20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 26x19.png"
-dest_files=["res://.godot/imported/Square Buttons 26x19.png-5d063af9ac9e9a8a01c43f0fe4c6c2f5.ctex"]
+source_file="res://Assets/Sprout Lands - UI Pack - Basic pack/Sprite sheets/buttons/Square Buttons 26x19.png"
+dest_files=["res://.godot/imported/Square Buttons 26x19.png-a21facff9ed2d96a2cfbb07f0621be20.ctex"]
 
 [params]
 
