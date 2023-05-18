@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+Assets/
+<<<<<<< HEAD
+Sprout Lands - UI Pack - Basic pack
+icon.svg
+icon.svg.import
+=======
+
+>>>>>>> 5370813a3be3d9b90ca36e35e70c028845a4083e

@@ -1,0 +1,72 @@
+<<<<<<< HEAD:Scenes/node_2d.tscn
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_mt57w"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://uotby71b14jt"]
+
+[ext_resource type="Script" path="res://Script/Mappa.gd" id="1_5juvr"]
+[ext_resource type="Script" path="res://Script/Player.gd" id="1_ll17e"]
+>>>>>>> 5370813a3be3d9b90ca36e35e70c028845a4083e:scene/node_2d.tscn
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4e1hk"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Mappa" type="TileMap" parent="." node_paths=PackedStringArray("player")]
+format = 2
+script = ExtResource("1_5juvr")
+player = NodePath("../CharacterBody2D")
+
+[node name="Mappa 1" type="Polygon2D" parent="Mappa"]
+color = Color(0, 1, 1, 1)
+polygon = PackedVector2Array(0, 0, 632, 0, 632, 369, 0, 369)
+
+[node name="Mappa 2" type="Polygon2D" parent="Mappa"]
+position = Vector2(632, 0)
+color = Color(0.921569, 0.454902, 0.713726, 1)
+polygon = PackedVector2Array(0, 0, 596, 0, 596, 369, 0, 369)
+
+[node name="Mappa3" type="Polygon2D" parent="Mappa"]
+position = Vector2(0, 369)
+color = Color(0.8, 0.603922, 0.968627, 1)
+polygon = PackedVector2Array(0, 0, 1228, 0, 1228, 355, 0, 355)
+
+[node name="Mappa 4" type="Polygon2D" parent="Mappa"]
+position = Vector2(0, 724)
+color = Color(1, 1, 0.360784, 1)
+polygon = PackedVector2Array(0, 0, 0, 356, 1228, 356, 1228, 0)
+
+[node name="Mappa 5" type="Polygon2D" parent="Mappa"]
+position = Vector2(1228, 0)
+color = Color(0.105882, 0.784314, 0.541176, 1)
+polygon = PackedVector2Array(0, 0, 692, 0, 692, 1080, 0, 1080)
+
+[node name="Edifici" type="Node2D" parent="."]
+
+[node name="Casa (level 1)" type="Polygon2D" parent="Edifici"]
+position = Vector2(46, 23)
+polygon = PackedVector2Array(0, 0, 183, 0, 183, 138, 0, 138)
+
+[node name="Campo 1 (level 1)" type="Polygon2D" parent="Edifici"]
+position = Vector2(336, 43)
+polygon = PackedVector2Array(0, 0, 206, 0, 206, 115, 0, 115)
+
+[node name="Pozzo 1 (level 1)" type="Polygon2D" parent="Edifici"]
+position = Vector2(238, 224)
+polygon = PackedVector2Array(0, 0, 0, 94, 98, 94, 98, 0)
+
+[node name="Campo 2 (level 2)" type="Polygon2D" parent="Edifici"]
+position = Vector2(717, 23)
+scale = Vector2(1.01493, 1.03017)
+polygon = PackedVector2Array(0, 0, 334, 0, 334, 146, 0, 146)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." node_paths=PackedStringArray("mappa")]
+script = ExtResource("1_ll17e")
+mappa = NodePath("../Mappa")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(810, 369)
+shape = SubResource("CapsuleShape2D_4e1hk")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
