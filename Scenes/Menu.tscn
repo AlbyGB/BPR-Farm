@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf5qq840c0h82"]
+
+[ext_resource type="Script" path="res://Scripts/MenuScript.gd" id="1_ac73t"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_ac73t")
+
+[node name="MenuButtonsContainer" type="VBoxContainer" parent="."]
+offset_left = 601.0
+offset_top = 328.0
+offset_right = 839.0
+offset_bottom = 429.0
+scale = Vector2(3, 3)
+alignment = 1
+
+[node name="Button" type="Button" parent="MenuButtonsContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Button2" type="Button" parent="MenuButtonsContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="Button3" type="Button" parent="MenuButtonsContainer"]
+layout_mode = 2
+text = "Exit"
