@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5pbe88usp2nd"]
+
+[ext_resource type="Script" path="res://Scripts/MappaScript.gd" id="1_w6gbs"]
+
+[node name="Mappa" type="Node2D"]
+script = ExtResource("1_w6gbs")
