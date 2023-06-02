@@ -1,10 +1,11 @@
-[gd_scene load_steps=35 format=3 uid="uid://c1agaa3khitey"]
+[gd_scene load_steps=35 format=3 uid="uid://cp2qihy85s6ms"]
 
-[ext_resource type="Script" path="res://Scenes/PlayerScript.gd" id="1_dedo5"]
+[ext_resource type="Script" path="res://Scripts/PlayerScript.gd" id="1_uckib"]
 [ext_resource type="Texture2D" uid="uid://bjo7mwdd1qt2r" path="res://Assets/Characters/Basic Charakter Spritesheet.png" id="2_6icd4"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_onr8r"]
-size = Vector2(14, 16)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_htvfv"]
+radius = 4.0
+height = 8.0
 
 [sub_resource type="Animation" id="Animation_4p1hv"]
 length = 0.001
@@ -263,16 +264,17 @@ transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_mphnm"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_dedo5")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_onr8r")
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_uckib")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_6icd4")
 hframes = 4
 vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_htvfv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)

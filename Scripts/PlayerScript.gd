@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var moveSpeed: float = 50
 @export var startingDirection: Vector2 = Vector2(0, 1)
+@export var waterPerc: float = 1
 
 #@onready var player_animation = $AnimationPlayer
 @onready var animationTree = $AnimationTree
