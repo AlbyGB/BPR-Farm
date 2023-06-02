@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://dut7ui6rookn6"]
+[gd_scene load_steps=4 format=3 uid="uid://dut7ui6rookn6"]
+
+[ext_resource type="PackedScene" uid="uid://bfv6kxqwk6am8" path="res://Scenes/Mappa.tscn" id="1_8gsc6"]
+[ext_resource type="Script" path="res://Scripts/MainGameScript.gd" id="1_jgpg2"]
+[ext_resource type="PackedScene" uid="uid://bv6lhky1oki1f" path="res://Scenes/GamePaused.tscn" id="3_3bf5i"]
 
 [node name="MainGame" type="Node2D"]
+script = ExtResource("1_jgpg2")
+
+[node name="Mappa" parent="." instance=ExtResource("1_8gsc6")]
+position = Vector2(767, 589)
+
+[node name="GamePaused" parent="." instance=ExtResource("3_3bf5i")]
