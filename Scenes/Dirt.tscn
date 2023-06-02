@@ -1,4 +1,28 @@
-[gd_scene format=3 uid="uid://ddpxd15vknqk1"]
+[gd_scene load_steps=5 format=3 uid="uid://c6p5uyenxf18p"]
 
-[node name="Dirt" type="TileMap"]
-format = 2
+[ext_resource type="Texture2D" uid="uid://coi5fw1b6a4wo" path="res://Assets/Tilesets/ground tiles/old tiles/Tilled Dirt.png" id="1_3gxo8"]
+[ext_resource type="Script" path="res://Scripts/DirtScript.gd" id="1_law8g"]
+[ext_resource type="PackedScene" uid="uid://do3t4m274s0c8" path="res://Scenes/Plant.tscn" id="3_61enx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2vryn"]
+size = Vector2(18, 16)
+
+[node name="Dirt" type="Area2D"]
+script = ExtResource("1_law8g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3gxo8")
+hframes = 7
+vframes = 8
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2vryn")
+
+[node name="Plant" parent="." instance=ExtResource("3_61enx")]
+visible = false
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="zaz" from="." to="Plant" method="_on_dirt_zaz"]
+[connection signal="zaz2" from="." to="Plant" method="_on_dirt_zaz_2"]

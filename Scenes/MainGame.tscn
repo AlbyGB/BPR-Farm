@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dut7ui6rookn6"]
+[gd_scene load_steps=5 format=3 uid="uid://hgasqs6e5063"]
 
 [ext_resource type="PackedScene" uid="uid://bfv6kxqwk6am8" path="res://Scenes/Mappa.tscn" id="1_8gsc6"]
 [ext_resource type="Script" path="res://Scripts/MainGameScript.gd" id="1_jgpg2"]
-[ext_resource type="PackedScene" uid="uid://bv6lhky1oki1f" path="res://Scenes/GamePaused.tscn" id="3_3bf5i"]
-[ext_resource type="PackedScene" uid="uid://cbsb807ci6hdu" path="res://Scenes/Plant.tscn" id="4_e6gas"]
 [ext_resource type="PackedScene" uid="uid://cp2qihy85s6ms" path="res://Scenes/Player.tscn" id="5_8i4pc"]
+[ext_resource type="PackedScene" uid="uid://c6p5uyenxf18p" path="res://Scenes/Dirt.tscn" id="6_owov8"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_jgpg2")
@@ -12,15 +11,16 @@ script = ExtResource("1_jgpg2")
 [node name="Mappa" parent="." instance=ExtResource("1_8gsc6")]
 position = Vector2(767, 589)
 
-[node name="Plant" parent="." instance=ExtResource("4_e6gas")]
-position = Vector2(899, 527)
+[node name="Dirt" parent="." node_paths=PackedStringArray("dirts_container") instance=ExtResource("6_owov8")]
+position = Vector2(840, 444)
+dirts_container = NodePath("")
 
-[node name="GamePaused" parent="." instance=ExtResource("3_3bf5i")]
-visible = false
-offset_left = 676.0
-offset_top = 572.0
-offset_right = 676.0
-offset_bottom = 572.0
+[node name="Dirt2" parent="." instance=ExtResource("6_owov8")]
+position = Vector2(833, 501)
 
 [node name="Player" parent="." instance=ExtResource("5_8i4pc")]
-position = Vector2(934, 597)
+position = Vector2(773, 482)
+
+[connection signal="raccolta" from="Player" to="Dirt" method="_on_player_raccolta"]
+[connection signal="semina" from="Player" to="Dirt" method="_on_player_semina"]
+[connection signal="semina" from="Player" to="Dirt2" method="_on_player_semina"]

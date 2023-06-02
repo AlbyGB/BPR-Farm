@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbsb807ci6hdu"]
+[gd_scene load_steps=4 format=3 uid="uid://do3t4m274s0c8"]
 
-[ext_resource type="Script" path="res://Scenes/PlantScript.gd" id="1_rlmh7"]
+[ext_resource type="Script" path="res://Scripts/PlantScript.gd" id="1_o0i6k"]
 [ext_resource type="Texture2D" uid="uid://owscodo7bhnh" path="res://Assets/Objects/Basic Plants.png" id="2_3fmac"]
 
-[node name="Plant" type="Node2D"]
-script = ExtResource("1_rlmh7")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4aak7"]
+size = Vector2(16, 16)
+
+[node name="Plant" type="Area2D"]
+script = ExtResource("1_o0i6k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4aak7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_3fmac")

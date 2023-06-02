@@ -1,7 +1,8 @@
-[gd_scene load_steps=35 format=3 uid="uid://cp2qihy85s6ms"]
+[gd_scene load_steps=36 format=3 uid="uid://cp2qihy85s6ms"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerScript.gd" id="1_uckib"]
 [ext_resource type="Texture2D" uid="uid://bjo7mwdd1qt2r" path="res://Assets/Characters/Basic Charakter Spritesheet.png" id="2_6icd4"]
+[ext_resource type="PackedScene" uid="uid://eb3watuf7deo" path="res://Scenes/PlayerUI.tscn" id="3_0ytpc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_htvfv"]
 radius = 4.0
@@ -291,3 +292,11 @@ active = true
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_mphnm")
 parameters/idle/blend_position = Vector2(0, 0)
 parameters/walk/blend_position = Vector2(0, 0)
+
+[node name="PlayerUI" parent="." instance=ExtResource("3_0ytpc")]
+offset_left = -232.0
+offset_top = -129.0
+offset_right = -232.0
+offset_bottom = -129.0
+
+[connection signal="semina" from="." to="." method="_on_semina"]
